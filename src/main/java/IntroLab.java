@@ -21,7 +21,7 @@ public class IntroLab {
      * @return A message using the given parameters.
      */
     public static String printLabMessage(String greeting, String name,
-                                  boolean likes_cats, String message) {
+                                                  boolean likes_cats, String message) {
         String message_to_print = greeting + "! My name is " + name + "! ";
 
         if (likes_cats) {
@@ -33,9 +33,14 @@ public class IntroLab {
         return message_to_print + message;
     }
 
+    public static String ohhalyn() {
+        return printLabMessage("Hiii", "Ashley",true,
+                "welcome to tutorial!" );
+    }
     /* TODO: In the space below, write your our method.
      *       The method should be named with your utorID and should call
      *       printLabMessage with some parameters.
+     *
      *
      * As a reference, we've provided the sample method exampleStudent.
      * Make sure you document your method properly!
@@ -52,6 +57,7 @@ public class IntroLab {
 
     public static void main(final String[] args) {
         System.out.println(exampleStudent());
+        System.out.println(ohhalyn());
 
         /* TODO: Add a call to the method you wrote in this main method,
          *        and print the results of it.
